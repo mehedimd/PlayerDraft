@@ -73,3 +73,18 @@
       width: 100px;
     }
   }
+  @media only screen and ( max-width: 414px){
+    .header{
+      height: 200px;
+      align-items: flex-start;
+      padding-top: 8px;
+    }
+
+    .header-img{
+      width: 80px;
+      
+    }
+    .football{
+      width: 80px;
+    }
+  }
