@@ -82,7 +82,6 @@
   @media only screen and ( max-width: 414px){
     .header{
       height: 200px;
-      align-items: flex-start;
       padding-top: 8px;
     }
 
@@ -97,8 +96,6 @@
   @media only screen and ( max-width: 374px){
     .header{
       height: 220px;
-      align-items: flex-start;
-      padding-top: 8px;
     }
 
     .header-img{
