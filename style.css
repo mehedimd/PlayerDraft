@@ -82,7 +82,6 @@
   @media only screen and ( max-width: 414px){
     .header{
       height: 200px;
-      align-items: flex-start;
       padding-top: 8px;
     }
 
@@ -96,22 +95,6 @@
   }
   @media only screen and ( max-width: 374px){
     .header{
-      height: 200px;
-      align-items: flex-start;
-      padding-top: 8px;
-    }
-
-    .header-img{
-      width: 50px;
-      
-    }
-    .football{
-      width: 50px;
-    }
-    .heading-title{
-      font-size: 20px;
-    }
-    .content p{
-      font-size: 9px;
+      height: 220px;
     }
   }
