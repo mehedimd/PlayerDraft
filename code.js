@@ -48,6 +48,12 @@ function selected(select){
             arrayPlayers.pop(selectedPlayerName);
 
             totalSelectedPlayerNow.innerText = orderList.children.length;
+
+            const playerExpenses = document.querySelector('#playerExpenses');
+            playerExpenses.innerText = '0';
+
+            const displayCost = document.querySelector('#displayCost');
+            displayCost.innerText = '0';
         }   
         
     }
