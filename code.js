@@ -30,7 +30,7 @@ function selected(select){
     select.innerText = "SELECT";
 
     const selectedPlayerName = select.parentNode.children[0].innerText;
-    console.log(selectedPlayerName.parentElement);
+    
 
     const orderList = document.querySelector('#orderList');
     let  orderListLength = orderList.children.length;
@@ -39,8 +39,6 @@ function selected(select){
     
     for(let i = 0; i< orderListLength ; i++){
         let text = orderList.children[i].textContent;
-        
-        console.log(text.parentElement);
 
         if(selectedPlayerName === text){
             
