@@ -1,5 +1,6 @@
 const arrayPlayers = [];
 
+// Total Number of Player Selected list 
 
 function onSelect(select){
     const totalSelectedPlayer = document.querySelector('#totalSelected');
@@ -15,8 +16,42 @@ function onSelect(select){
     
     orderList.appendChild(li);
 
+    select.setAttribute('onclick','selected(this)')
+    select.setAttribute('class',"btn btn-light text-dark");
+    select.innerText = "SELECTED"
+    
+
 
 }
+
+function selected(select){
+    select.setAttribute('onclick',"onSelect(this)")
+    select.setAttribute('class',"btn btn-primary");
+    select.innerText = "SELECT";
+
+    const selectedPlayerName = select.parentNode.children[0].innerText;
+    console.log(selectedPlayerName.parentElement);
+
+    const orderList = document.querySelector('#orderList');
+    let  orderListLength = orderList.children.length;
+
+    
+    
+    for(let i = 0; i< orderListLength ; i++){
+        let text = orderList.children[i].textContent;
+        
+        console.log(text.parentElement);
+
+        if(selectedPlayerName === text){
+            
+        }
+        
+        
+    }
+    // orderList.removeChild(orderList.lastElementChild)
+}
+
+// Calculate Per Player Expenses
 
 document.querySelector('#playerCostCalculate').addEventListener('click',function(){
     const playerExpenses = document.querySelector('#playerExpenses');
@@ -38,6 +73,8 @@ document.querySelector('#playerCostCalculate').addEventListener('click',function
     document.querySelector('#perPlayerCost').value = ''; //input field value clear
 
 })
+
+// Calculate Total Player Cost //
 
 document.querySelector('#totalCalculate').addEventListener('click', function(){
     const playerExpenses = document.querySelector('#playerExpenses').innerText;
