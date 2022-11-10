@@ -50,6 +50,9 @@
 
     }
   }
+
+  /* for tablate or mini macbook */
+  
   @media only screen and ( max-width: 767px){
     .header{
       height: 250px;
@@ -73,6 +76,9 @@
       width: 100px;
     }
   }
+
+  /* // for Mobile Device */
+
   @media only screen and ( max-width: 414px){
     .header{
       height: 200px;
