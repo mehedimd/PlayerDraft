@@ -23,6 +23,7 @@ function onSelect(select){
 
 
 }
+        //if any player selected then..
 
 function selected(select){
     select.setAttribute('onclick',"onSelect(this)")
@@ -33,20 +34,20 @@ function selected(select){
     
 
     const orderList = document.querySelector('#orderList');
-    let  orderListLength = orderList.children.length;
+    const  orderListLength = orderList.children.length;
 
     
     
     for(let i = 0; i< orderListLength ; i++){
-        let text = orderList.children[i].textContent;
+        let text = orderList.children[i].innerText;
 
         if(selectedPlayerName === text){
+
+            orderList.removeChild(orderList.children[i]) //removed de-select order list item
             
-        }
-        
+        }   
         
     }
-    // orderList.removeChild(orderList.lastElementChild)
 }
 
 // Calculate Per Player Expenses
